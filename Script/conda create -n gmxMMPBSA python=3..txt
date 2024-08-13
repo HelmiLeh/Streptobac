@@ -1,0 +1,14 @@
+conda create -n gmxMMPBSA python=3.9 -y -q
+conda activate gmxMMPBSA
+conda install -c conda-forge "mpi4py<=3.1.5" "ambertools<=23.3" -y -q
+python -m pip install "pyqt5==5.15.6"
+conda install -c conda-forge "gromacs<=2023.4" pocl -y -q
+python -m pip install gmx_MMPBSA
+amber.conda install pip    
+conda install -c anaconda git
+sudo apt install --reinstall libxcb-xinerama0
+
+sudo apt-get install -y --no-install-recommends libegl1-mesa libfontconfig libglu1-mesa libsm6 libxi6 libxrender1 mesa-common-dev
+sudo apt install -y nvidia-340 mesa-utils && glxgears
+sudo apt install qtcreator
+qtcreator
